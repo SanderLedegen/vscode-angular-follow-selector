@@ -1,4 +1,4 @@
-![Logo](images/logo.svg)
+![Logo](images/logo.png)
 
 # Angular Follow Selector
 

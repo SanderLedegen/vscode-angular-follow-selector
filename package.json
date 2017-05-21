@@ -12,6 +12,7 @@
     "engines": {
         "vscode": "^1.10.0"
     },
+    "icon": "images/logo.svg",
     "categories": [
         "Languages",
         "Other"
