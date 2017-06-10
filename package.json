@@ -1,8 +1,8 @@
 {
     "name": "angular-follow-selector",
     "displayName": "Angular Follow Selector",
-    "description": "Enables clicking on Angular selectors in your HTML files and being redirected to their component definition.",
-    "version": "1.0.0",
+    "description": "Enables clicking on Angular selectors in your HTML files and being redirected to their component definition, as well as the other way around by clicking on templateUrl and styleUrls in your component.",
+    "version": "1.1.0",
     "license": "MIT",
     "publisher": "sanderledegen",
     "repository": {
@@ -12,7 +12,7 @@
     "engines": {
         "vscode": "^1.10.0"
     },
-    "icon": "images/logo.svg",
+    "icon": "images/logo.png",
     "categories": [
         "Languages",
         "Other"
@@ -27,7 +27,8 @@
         "goto"
     ],
     "activationEvents": [
-        "onLanguage:html"
+        "onLanguage:html",
+        "onLanguage:typescript"
     ],
     "main": "./out/src/extension",
     "scripts": {
