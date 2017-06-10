@@ -5,7 +5,7 @@ import { TextDocument, Position, CancellationToken, ProviderResult, Location, Ur
 
 export class AngularUrlDefinitionProvider implements vscode.DefinitionProvider {
 
-  urlRangeRegex = /[\w.-]+/
+  urlRangeRegex = /[\w./-]+/
 
   provideDefinition(document: TextDocument, position: Position, token: CancellationToken): ProviderResult<Location> {
     const wordRange = document.getWordRangeAtPosition(position, this.urlRangeRegex)

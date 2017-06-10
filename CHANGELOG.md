@@ -1,5 +1,8 @@
 # Angular Follow Selector changelog
 
+## 1.1.1 (2017-06-10)
+- Fixed an issue where a resource specified in `templateUrl` or `styleUrls` would not be found when the file name contains a slash.
+
 ## 1.1.0 (2017-06-09)
 - Added a new feature that lets you open the template and styling files directly from the component.
 
