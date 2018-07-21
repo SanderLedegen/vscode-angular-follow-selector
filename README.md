@@ -18,6 +18,9 @@ None found so far but feel free to log an issue if you encounter something unexp
 
 ## Release Notes
 
+### 1.2.0
+Added the possibility to navigate to directives in the project.
+
 ### 1.1.1
 Fixed an issue where a resource specified in `templateUrl` or `styleUrls` would not be found when the file name contains a slash.
 
