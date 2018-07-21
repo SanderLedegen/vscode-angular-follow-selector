@@ -1,13 +1,13 @@
 import * as vscode from 'vscode'
 import * as path from 'path'
 import * as fs from 'fs'
-import { TextDocument, Position, CancellationToken, ProviderResult, Location, Uri } from 'vscode'
+import { TextDocument, Position, ProviderResult, Location, Uri } from 'vscode'
 
 export class AngularUrlDefinitionProvider implements vscode.DefinitionProvider {
 
   urlRangeRegex = /[\w./-]+/
 
-  provideDefinition(document: TextDocument, position: Position, token: CancellationToken): ProviderResult<Location> {
+  provideDefinition(document: TextDocument, position: Position): ProviderResult<Location> {
     const wordRange = document.getWordRangeAtPosition(position, this.urlRangeRegex)
     const clickedRelativeUri = document.getText(wordRange)
     const containingLine = document.lineAt(position.line).text

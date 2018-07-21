@@ -1,47 +1,47 @@
 {
-    "name": "angular-follow-selector",
-    "displayName": "Angular Follow Selector",
-    "description": "Enables clicking on Angular selectors in your HTML files and being redirected to their component definition, as well as the other way around by clicking on templateUrl and styleUrls in your component.",
-    "version": "1.1.1",
-    "license": "MIT",
-    "publisher": "sanderledegen",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/SanderLedegen/vscode-angular-follow-selector.git"
-    },
-    "engines": {
-        "vscode": "^1.10.0"
-    },
-    "icon": "images/logo.png",
-    "categories": [
-        "Languages",
-        "Other"
-    ],
-    "keywords": [
-        "angular",
-        "selector",
-        "component",
-        "typescript",
-        "definition",
-        "peek",
-        "goto"
-    ],
-    "activationEvents": [
-        "onLanguage:html",
-        "onLanguage:typescript"
-    ],
-    "main": "./out/src/extension",
-    "scripts": {
-        "vscode:prepublish": "tsc -p ./",
-        "compile": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
-        "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
-    }
+  "name": "angular-follow-selector",
+  "displayName": "Angular Follow Selector",
+  "description": "Enables clicking on Angular selectors in your HTML files and being redirected to their component definition, as well as the other way around by clicking on templateUrl and styleUrls in your component.",
+  "version": "1.2.0",
+  "license": "MIT",
+  "publisher": "sanderledegen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SanderLedegen/vscode-angular-follow-selector.git"
+  },
+  "engines": {
+    "vscode": "^1.10.0"
+  },
+  "icon": "images/logo.png",
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "angular",
+    "selector",
+    "component",
+    "typescript",
+    "definition",
+    "peek",
+    "goto"
+  ],
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:typescript"
+  ],
+  "main": "./out/src/extension",
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0",
+    "mocha": "^2.3.3",
+    "@types/node": "^6.0.40",
+    "@types/mocha": "^2.2.32"
+  }
 }

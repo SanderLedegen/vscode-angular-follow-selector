@@ -2,3 +2,4 @@ out
 node_modules
 .history
 *.vsix
+.DS_Store

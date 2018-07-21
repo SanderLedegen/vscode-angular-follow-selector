@@ -5,13 +5,21 @@ import { AngularUrlDefinitionProvider } from './providers/angular-url-definition
 export function activate(context: vscode.ExtensionContext) {
 
   const selectorRegistration = vscode.languages.registerDefinitionProvider(
-    { language: 'html', pattern: '**/*.component.html' },
-    new AngularSelectorDefinitionProvider()
+    {
+      language: 'html',
+      pattern: '**/*.component.html',
+      scheme: 'file',
+    },
+    new AngularSelectorDefinitionProvider(),
   )
 
   const urlRegistration = vscode.languages.registerDefinitionProvider(
-    { language: 'typescript', pattern: '**/*.component.ts' },
-    new AngularUrlDefinitionProvider()
+    {
+      language: 'typescript',
+      pattern: '**/*.component.ts',
+      scheme: 'file',
+    },
+    new AngularUrlDefinitionProvider(),
   )
 
   context.subscriptions.push(
